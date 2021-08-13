@@ -1,0 +1,51 @@
+.sidebar{
+    width: 15rem;
+    height : 100vh;
+    background-color: white;
+    
+}
+
+.logo{
+    height : 55px;
+   
+    color: rgb(51, 5, 51);
+    
+    
+    
+   
+        display: flex;
+    align-items: center;
+        margin: 0 auto;
+        .icon{
+            font-size: 25px;
+        }
+        .name{
+            margin-bottom: 5px;
+            font-size: 20px;;
+        }
+    }
+    // .icon{
+    //     font-size: 25px;
+    // }
+
+.sidebar_items{
+    margin: 2px 2px;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    .el_icon{
+        font-size: 25px;
+        padding: 5px;
+    }
+     .el_name{
+        font-size: 15px;
+        padding: 0 5px;
+    }
+    &:hover{
+        color:white;
+        background-color: rgb(51, 5, 51);
+    }
+}
+.billings{
+    margin: 3px 0 0 20px;
+}

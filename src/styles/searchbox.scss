@@ -1,0 +1,41 @@
+.main{
+    margin: 5%  0 5% 3%;
+}
+.content{
+    font-size: 18px;
+    font-weight: 700;
+}
+.sub{
+    color: white;
+    font-size: 12px;
+    margin: 0 13px;
+    padding:2.5px 12px;
+    background-color: rgb(51, 5, 51);
+}
+.sub2{
+    font-size: 13px;
+    font-weight: 700;
+}
+.main_box{
+     margin: 0 3%;
+.searchbox{
+    padding: 15px 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+   
+    input{
+        margin : 0 20px;
+        border: none;
+        outline: none;
+    }
+    button{
+        border: none;
+        color: white;
+        background-color:rgb(51, 5, 51);
+        padding: 12px 17px;
+        margin: -2px 0 -2px 42rem;
+        border-radius: 5px;
+    }
+}
+}
