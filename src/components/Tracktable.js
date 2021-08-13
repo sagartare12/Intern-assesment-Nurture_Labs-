@@ -14,21 +14,21 @@ const Tracktable = () => {
     //         setDat(res);
 useEffect( ()=>{
     try {
-
+setIsLoading(true)
        const fetchAPI = async()=>{
             const res = await fetch(url).then(res => res.json());
            
             setDatas(res.data);
+            setIsLoading(false);
         } 
         // const res = await fetch(url).then(res => res.json());
            
         //     setDatas(res.data);
         fetchAPI();
-            setIsLoading(false);
     } catch (error) {
         console.log(error.message);
     }
-},[setIsLoading]);
+},[setDatas]);
 
 
     
