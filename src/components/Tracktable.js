@@ -12,16 +12,23 @@ const Tracktable = () => {
     // const res =  fetch(url).then(res => res.json());
             
     //         setDat(res);
-useEffect(async ()=>{
+useEffect( ()=>{
     try {
-        const res = await fetch(url).then(res => res.json());
+
+       const fetchAPI = async()=>{
+            const res = await fetch(url).then(res => res.json());
            
             setDatas(res.data);
+        } 
+        // const res = await fetch(url).then(res => res.json());
+           
+        //     setDatas(res.data);
+        fetchAPI();
             setIsLoading(false);
     } catch (error) {
         console.log(error.message);
     }
-},[setDatas]);
+},[setIsLoading]);
 
 
     
